@@ -1,4 +1,4 @@
-@import url ('https://fonts.googleapis.com/css2? family = Open + Sans: wght @ 400; 600; 700 & display = swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
 body {
   font-family: "Open Sans", Helvetica, sans-serif;
@@ -40,9 +40,13 @@ p {
   box-sizing: border-box;
 }
 
+button {
+  border: 1px solid transparent;
+}
+
 .container {
   margin: 0 auto;
-  width: 1140px;
+  width: 1140px; 
 }
 
 .logo {
@@ -54,8 +58,8 @@ p {
 
 .menu {
   position: absolute;
-  top: 42px;
-  left: 250px;
+  top: 38px;
+  left: 166px;
 }
 .contacts {
   position: absolute;
@@ -83,7 +87,7 @@ p {
   font-style: normal;
   text-decoration: none;
   font-size: 26px;
-  margin-bottom: 4px;
+  margin-bottom: 10px;
 }
 
 .contacts__dropdown-title {
@@ -95,16 +99,17 @@ p {
   width: 520px;
 }
 
-.preview__title {
+.preview__title h1 {
   font-size: 72px;
   font-weight: bold;
-  line-height: 1.1;
-  margin-bottom: 18px;
+  line-height: 1.3;
+  margin-bottom: 28px;
+  margin-top: 82px;
 }
 
 .preview__text {
   font-size: 18px;
-  margin-bottom: 45px;
+  margin-bottom: 31px;
 }
 
 .preview__button {
@@ -116,16 +121,19 @@ p {
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
+  margin-bottom: 243px;
+  outline: none;
 }
 
 .section {
   margin-bottom: 127px;
 }
 
-.features__title {
+.features__title h2 {
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 51px;
+  display: inline-block;
 }
 
 .features__title-img {
@@ -146,19 +154,19 @@ p {
 
 .features__img {
   min-height: 144px;
-  margin-bottom: 33px;
+  margin-bottom: 30px;
   border-radius: 5px 5px 0 0;
 }
 
 .features__content {
-  padding: 23px 23px 26px;
+  padding: 0 22px 5px;
   color: #303030;
 }
 
 .features__subtitle {
   font-weight: bold;
   font-size: 24px;
-  margin-bottom: 30px;
+  margin-bottom: 13px;
 }
 
 .features__desc-block {
@@ -166,7 +174,6 @@ p {
   vertical-align: top;
   width: 126px;
   margin-right: 26px;
-  
 }
 
 .features__desc-block:last-child {
@@ -199,11 +206,16 @@ p {
   text-decoration: none;
   align-items: center;
   border-color: #F5170E;
+  outline: none;
 }
 
 .features__button:hover {
   background: #F5170E;
   color: #fff;
+}
+
+.news {
+  margin-top: 147px
 }
 
 .news__title {
@@ -217,12 +229,17 @@ p {
 }
 
 .news__item {
-  width: 557px;
+  width: 548px;
   display: inline-block;
   vertical-align: top;
   position: relative;
   border-radius: 5px;
   overflow: hidden;
+  margin-right: 20px;
+}
+
+.news__item :last-child {
+  margin-right: 0;
 }
 
 .news__item-img {
@@ -232,18 +249,28 @@ p {
   object-fit: cover;
 }
 
-.news__content {
+.new-year .news__content {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 47px 33px;
+  padding: 46px 30px;
+  min-height: 140px;
+}
+
+.serf .news__content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 23px 39px;
   min-height: 140px;
 }
 
 .news__title-text-date {
   font-size: 14px;
   margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 .news__subtitle {
@@ -262,9 +289,10 @@ p {
 
 .paginator {
   text-align: center;
+  margin: 56px;
 }
 
-.paginator__display ,paginator__list {
+.paginator__display, .paginator__list {
   display: inline-block;
   vertical-align: middle;
 }
@@ -280,16 +308,19 @@ p {
 
 .paginator__link {
   display: block;
-  width: 32px;
-  height: 32px;
+  padding: 6px 12px;
   border-radius: 50%;
   text-decoration: none;
   font-weight: bold;
 }
 
- .paginator__item-active .paginator__link {
+ .paginator__item--active  {
   background: #ffffff;
   color: #F5170E; 
+}
+
+.about-us {
+  padding-top: 89px;
 }
 
 .about-us:before {
@@ -301,19 +332,20 @@ p {
   background: url(./images/gates.png) center center / cover no-repeat;
 }
 
-.about-us:after {
-  content: "";
-  display: block;
-  width: 785px;
+.about-us__content {
+  display: inline-block;
+  width: 782px;
   height: 485px;
   background: url(./images/mountains.png) center center / cover no-repeat;
   border-radius: 5px;
+  margin-top: 100px;
+  margin-left: -139px;
 }
 
 .about-us__title {
   position: absolute;
-  padding: 180px 202px 66px 81px;
-  width: 780px;
+  padding: 67px 202px 61px 81px;
+  width: 609px;
 }
 
 .about-us__title-img {
@@ -349,6 +381,7 @@ p {
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
+  outline: none;
 }
 
 
@@ -357,6 +390,7 @@ p {
   width: 1140px;
   position: relative;
   height: 146px;
+  margin-top: -77px;
 }
 
 .footer-container__content {
@@ -364,10 +398,14 @@ p {
 }
 
 .contacts__text {
-  position: absolute;
+    display: block;
   color: #9A9A9A;
   font-size: 11px;
   padding-bottom: 10px;
+}
+
+.socials {
+  display: inline-block;
 }
 
 .socials__item {
@@ -376,8 +414,12 @@ p {
   margin-right: 10px;
 }
 
-.socials__item:last-child {
+.socials__item: last-child {
   margin-right: 0;
+}
+
+a.socials__link: hover {
+  filter: invert (.5)
 }
 
 .socials__link {
@@ -391,15 +433,6 @@ p {
   top: 53px;
   right: 300px;
 }
-
-.socials-icon-tg. socials__link {
-  background-image: url("./images/telegram.png");
-} 
-
-
-.socials-icon-tg .socials__item: hover {
-  background-image: url(./images/telegram-hover.png);
-} 
 
 .main-page-wrapper {
   background: url(./images/1.png) center top no-repeat,url(./images/2.png) right bottom 165px no-repeat;
