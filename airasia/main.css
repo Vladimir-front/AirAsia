@@ -93,6 +93,7 @@ button {
 .contacts__dropdown-title {
   font-size: 13px;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .preview {
@@ -140,7 +141,7 @@ button {
 }
 
 .features__item {
-  min-height: 391px;
+  min-height: 452px;
   background: #fff;
   border-radius: 5px 5px 5px 5px;
   display: inline-block;
@@ -215,7 +216,7 @@ button {
 }
 
 .news {
-  margin-top: 147px
+  margin-top: 127px
 }
 
 .news__title {
@@ -256,6 +257,10 @@ button {
   bottom: 0;
   padding: 46px 30px;
   min-height: 140px;
+}
+
+.serf {
+  margin-right: 0;
 }
 
 .serf .news__content {
@@ -344,8 +349,8 @@ button {
 
 .about-us__title {
   position: absolute;
-  padding: 67px 202px 61px 81px;
-  width: 609px;
+  padding: 67px 397px 61px 81px;
+
 }
 
 .about-us__title-img {
@@ -360,8 +365,8 @@ button {
 }
 
 .about-us__text {
-  margin-bottom: 42px;
-  padding-right: ;
+  margin-bottom: 44px;
+  padding-right: 182px;
 }
 
 .about-us__text p {
@@ -390,7 +395,7 @@ button {
   width: 1140px;
   position: relative;
   height: 146px;
-  margin-top: -77px;
+  margin-top: -92px;
 }
 
 .footer-container__content {
@@ -406,6 +411,7 @@ button {
 
 .socials {
   display: inline-block;
+  position: absolute;
 }
 
 .socials__item {
@@ -414,7 +420,7 @@ button {
   margin-right: 10px;
 }
 
-.socials__item: last-child {
+.socials__item:last-child {
   margin-right: 0;
 }
 
@@ -430,8 +436,8 @@ a.socials__link: hover {
 }
 
 .socials {
-  top: 53px;
-  right: 300px;
+  top: 34px;
+  right: 252px;
 }
 
 .main-page-wrapper {
