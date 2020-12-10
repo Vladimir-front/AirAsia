@@ -49,22 +49,30 @@ button {
   width: 1140px; 
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__col {
+  display: flex;
+  align-items: center;
+}
+
+.header__col-align-right {
+  justify-content: end;
+}
+
 .logo {
   display: block;
-  position: absolute;
-  top: 29px;
-  left: 0;
+  margin-right: 80px;
 }
 
 .menu {
-  position: absolute;
-  top: 38px;
-  left: 166px;
+  
 }
 .contacts {
-  position: absolute;
-  top: 27px;
-  right: 0;
+  
 }
 
 .menu__item {
@@ -76,6 +84,10 @@ button {
 .menu__link {
   font-size: 14px;
   text-decoration: none;
+}
+
+.menu__list :last-child {
+  margin-right: 0;
 }
 
 .contacts {
@@ -97,7 +109,7 @@ button {
 }
 
 .preview {
-  width: 520px;
+  width: 50%;
 }
 
 .preview__title h1 {
