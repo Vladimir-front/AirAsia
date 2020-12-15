@@ -106,7 +106,6 @@ img {
 
 .menu__list {
   margin: 13px;
-  margin-left: 0;
 }
 
 .menu__list :last-child {
@@ -487,15 +486,6 @@ img {
   align-items: flex-end;
 }
 
-.logo {
-  margin-right: -134px;
-}
-
-.menu__list {
-  margin-left: 213px;
-  margin-top: 23px;
-}
-
 .contacts__text {
     display: block;
   color: #9A9A9A;
@@ -503,7 +493,7 @@ img {
   padding-bottom: 10px;
 }
 
-.socials__list {
+.socials {
   margin-right: 63px;
   margin-bottom: 8px;
 }
@@ -528,10 +518,7 @@ a.socials__link: hover {
   height: 36px;
 }
 
-.socials {
-  top: 34px;
-  right: 252px;
-}
+
 
 .main--page--wrapper {
   background: url(./images/1.png) center top no-repeat,url(./images/2.png) right bottom 165px no-repeat;
@@ -557,6 +544,7 @@ a.socials__link: hover {
 
 .header {
   margin-bottom: 86px;
+  padding-top: 0;
 }
 
 .page-title {
@@ -596,9 +584,9 @@ a.socials__link: hover {
 }
 
 .page-content {
-  background: #F2F2F2;
+  background: #FFFFFF;
   color: #303030;
-  padding: 40px 0;
+  padding: 10px 0;
 }
 
 .service {
@@ -643,7 +631,7 @@ a.socials__link: hover {
 .services__button {
   background: #fff;
   border-radius: 35px;
-  padding: 18px 30px;
+  padding: 18px 35px;
   color: #F5170E;
   font-weight: bold;
   font-size: 14px;
@@ -652,6 +640,11 @@ a.socials__link: hover {
   align-items: center;
   border-color: #F5170E;
   outline: none;
+}
+
+.services__button:hover {
+  background: #fff;
+  color: #F5170E;
 }
 
 .paginator {
@@ -669,45 +662,39 @@ a.socials__link: hover {
 }
 
 .inner-section {
-  background: #fff;
-  color: #1A1B1E;
-  padding: 114px;
-}
-
-.inner-section--bg-grey {
   background: #F4F5F5;
+  color: #1A1B1E;
+  padding-top: 99px;
+  padding-bottom: 60px;
 }
 
 .inner-section__title {
   font-size: 48px;
   font-weight: bold;
-  margin-bottom: 152px;
-  margin-top: -52px;
+  line-height: 65px;
+  color: #1A1B1E;
+  margin-bottom: 98px;
 }
 
 .partners {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -83px;
-  margin-top: -88px;
-}
-
-.partners__item {
-  margin-left: px;
-}
-
-.partners__item:nth-child(4n +1 ) {
-  margin-left: 0;
+  justify-content: space-between;
 }
 
 .partners__link {
-  text-decoration: none;
-  display: flex;
-  width: 270px;
-  height: 100px;
-  align-items: center;
-  justify-content: center;
-
+  display: inline-block;
 }
+
+.partners__item {
+  flex-basis: 24%;
+  margin-bottom: 52px;
+  text-align: left;
+}
+
+.partners__item:nth-child(4n) {
+  text-align: right;
+}
+
 
 .inner-footer {}
