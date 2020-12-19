@@ -131,7 +131,7 @@ img {
 }
 
 .main {
-  margin-top: 100px;
+  
 }
 
 .preview {
@@ -698,3 +698,288 @@ a.socials__link: hover {
 
 
 .inner-footer {}
+
+
+/* reviews */
+
+
+.review {
+  margin-bottom: 20px;
+}
+
+.reviews {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 50px 30px;
+  background: #F4F5F5;
+  column-count: 2;
+  column-gap: 30px;
+}
+
+.review__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.review__user {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #2E77A4;
+  margin-bottom: 11px;
+}
+
+.review__user:after {
+  content: url("./images-3/vk-blue 1.png");
+  height: 25px;
+}
+
+.avatar {
+  width: 140px;
+  height: 140px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.review__tegs {
+  display: flex;
+  align-items: flex-start;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 13px;
+  color: #333;
+  padding: 8px 16px;
+  border-radius: 50px;
+  background: #E7E7E7;
+}
+
+.tag--bg--green {
+  background: #B9EAE4;
+}
+
+.review__title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #1A1B1E;
+  margin-bottom: 13px;
+}
+
+.review__content--text {
+  margin-bottom: 49px;
+}
+
+.review__date {
+  font-size: 14px;
+  color: #1A1B1E;
+  font-weight: bold;
+}
+
+.separator {
+  background: url("./images-3/Rectangle.png");
+  min-height: 360px;
+  display: flex;
+  align-items: center;
+}
+
+.separator__content {
+  max-width: 50%;
+  padding-left: 288px;
+}
+
+.separator__title {
+  font-size: 48px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1.1;
+}
+
+.separator__img {
+  margin-top: 21px;
+}
+
+.form__row {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.form__controls {
+  display: flex;
+  margin-bottom: 35px;
+}
+
+.form__controls--title {
+  width: 36%;
+}
+
+.controls {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.controls__item {
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.form__input {
+  flex: 1;
+  margin-right: 30px;
+  border-radius: 4px;
+  border: none;
+  background: #fff;
+  padding: 22px 30px;
+  font-size: 18px;
+  color: #202123;
+}
+
+.form__input:placeholder {
+  color: #666;
+
+}
+
+.form__input:last-child {
+  margin-right: 0;
+}
+
+.form__input--textarea {
+  height: 235px;
+}
+
+.controls__elem {
+  cursor: pointer;
+}
+
+.controls__checkbox:checked ~ .controls__tag {
+  background:  #B9EAE4;
+}
+
+.controls__checkbox {
+  display: none;
+}
+
+.btn--color--grey {
+  background: #2B2B2B;
+  border-radius: 35px;
+  padding: 18px 35px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  align-items: center;
+  border-color: #F5170E;
+  outline: none;
+}
+
+.btn--color--orange {
+  background: #F5170E;
+  border-radius: 35px;
+  padding: 18px 35px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  align-items: center;
+  border-color: #F5170E;
+  outline: none;
+}
+
+.btn--color--grey:hover {
+  background:  #F5170E;
+}
+
+.btn--color--orange:hover {
+  background: #2B2B2B;
+}
+
+.form__btns {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form__btn {
+  margin-right: 17px;
+}
+
+.form__btn:last-child {
+  margin-right: 0;
+}
+
+/* welcome page */
+
+.welcome {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background: url("./images-4/bg.png") center bottom / cover no-repeat;
+}
+
+.central {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo__text {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 52px;
+}
+
+.welcome__button {
+  background: #F5170E;
+  border-radius: 35px;
+  border-color:  #F5170E;
+  padding: 18px 58px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+}
+
+.central--asia {
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation: zoom 1s;
+}
+
+20% {
+  transform: scale(1.15);
+}
+
+40% {
+  transform: scale(.9);
+}
+
+60% {
+  transform: scale(1.1);
+}
+
+80% {
+  transform: scale(.95);
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(.7);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
