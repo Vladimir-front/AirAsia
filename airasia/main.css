@@ -559,8 +559,8 @@ img {
   margin-right: 0;
 }
 
-a.socials__link: hover {
-  filter: invert (.5)
+.socials__link:hover {
+  filter: invert(.5);
 }
 
 .socials__link {
