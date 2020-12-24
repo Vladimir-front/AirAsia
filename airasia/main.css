@@ -555,11 +555,24 @@ img {
   margin-right: 10px;
 }
 
+.socials__item:after {
+  cursor: pointer;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 627%;
+  left: 65%;
+  transform: translate(-49%, -50%);
+  height: 36px;
+  width: 205px;
+  background: url('./images/css_sprites.png') -120px -10px;
+}
+
 .socials__item:last-child {
   margin-right: 0;
 }
 
-.socials__link:hover {
+.socials__item:hover:after {
   filter: invert(.5);
 }
 
