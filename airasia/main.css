@@ -553,6 +553,9 @@ img {
 .socials__item {
   display: inline-flex;
   margin-right: 10px;
+  width: 36px;
+  height: 36px;
+  position: relative;
 }
 
 .socials__item:after {
@@ -560,12 +563,12 @@ img {
   content: "";
   display: block;
   position: absolute;
-  top: 377%;
-  left: 65%;
-  transform: translate(-49%, -50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   height: 36px;
-  width: 205px;
-  background: url('./images/css_sprites.png') -120px -10px;
+  width: 36px;
+  background: url('./images/css_sprites.png') -122px -10px no-repeat;
 }
 
 .socials__item:last-child {
